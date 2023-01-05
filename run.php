@@ -1,5 +1,5 @@
 <?php
-    require_once "./index.php";
+    require_once "./src/class_cache.php";
 
     $obj = new YaoGuang\cache();
     // var_dump($obj->cache_get_data("test"));
