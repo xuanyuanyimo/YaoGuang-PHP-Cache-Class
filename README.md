@@ -1,2 +1,25 @@
 # YaoGuang-PHP-Cache-Class
-YaoGuang PHP cache class.
+###YaoGuang PHP cache class.
+
+***
+
+## 这是一个简单的PHP缓存类 
+
+**引用./src/calss_cache.php文件后，请实例化命名空间中的cache()类后再进行操作。**
+
+**使用以下类方法设置缓存，缓存数据请使用数组存储，建议使用索引数组。**
+```php
+set_cache( 缓存名 , 缓存数据(数组类型) , 缓存文件名(可选) , 缓存超时时间(以秒计时)(可选) )
+```
+
+**使用以下类方法静态获取缓存，缓存数据包括缓存设置时间将会以数组形式返回，且在获取后不会刷新缓存注册时间。**
+```php
+cache_static_get_data( 缓存名 , 缓存文件名(可选) )
+```
+
+**使用以下类方法查询缓存是否超时，超时返回true，未超时返回false。**
+```php
+cache_is_overtime( 缓存名 , 缓存文件名(可选) )
+```
+
+**注意：缓存文件名参数若是不写的话，会自动使用data.json文件作为缓存。**
