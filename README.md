@@ -19,7 +19,7 @@
  * @return array|bool
  * @throws Exception
 */
-public function set_cache($cache_name , $cache_data , $cache_file = "data.json" , $cache_update_time = 120)
+    public function set_cache($cache_name , $cache_data , $cache_file = "data.json" , $cache_update_time = 120)
 ```
 
 **使用以下类方法静态获取缓存，缓存数据包括缓存设置时间将会以数组形式返回，且在获取后不会刷新缓存注册时间。**
